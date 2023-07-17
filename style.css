@@ -1,82 +1,107 @@
 /* font import */
-*{
+* {
     font-family: 'Work Sans', sans-serif;
-    margin:0;
+    margin: 0;
 }
+
 /* Header styles */
 /* Navbar design */
-header{
-    background-color:rgba(255, 144, 14, 0.10);
+header {
+    background-color: rgba(255, 144, 14, 0.10);
     background-size: cover;
-    padding:50px 240px;
+    padding: 50px 240px;
 }
-.nav-title{
+
+.nav-title {
     font-size: 3rem;
     font-weight: 700;
 }
-nav{
+
+nav {
     display: flex;
     justify-content: space-between;
     align-items: center;
 }
-nav > ul{
+
+nav>ul {
     display: flex;
 }
-nav li{
+
+nav li {
     list-style: none;
     text-decoration: none;
     margin-right: 30px;
 }
-nav li a{
+
+nav li a {
     text-decoration: none;
     color: #424242;
     font-size: 18px;
     font-weight: 500;
 }
+
 /* Banner design */
-.banner-content{
+.banner-content {
     /* max-width:800px; */
     text-align: center;
 }
-.banner-tl{
+
+.banner-tl {
     font-size: 4rem;
     font-weight: 700;
     color: #131313;
 }
-.banner-desc{
-    
+
+.banner-desc {
+
     color: #424242;
 }
-.banner-btn{
+
+.banner-btn {
     margin: 10px auto;
     border-radius: 8px;
     background-color: #FF900E;
     border: none;
     color: #FFF;
-text-align: center;
-font-size: 2rem;
-font-weight: 600;
-padding: 10px 18px;
-cursor: pointer;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    cursor: pointer;
 }
-.banner img{
+
+.banner img {
+    margin: 10px auto;
     width: 100%;
-    height: 100%;
 }
-@media screen and (max-width: 576px){
-    header{
-        padding:20px;
+
+@media screen and (max-width: 576px) {
+    header {
+        padding: 20px;
     }
-    nav{
+    nav > ul{
         flex-direction: column;
+        /* margin:10px auto; */
+    }
+    nav {
+        flex-direction: column;
+    }
+    .banner-tl {
+        font-size: 3rem;
+        font-weight: 700;
     }
 }
 
-@media screen and (min-width: 576px) and (max-width: 992px){
-    header{
-        padding:20px;
+@media screen and (min-width: 576px) and (max-width: 992px) {
+    header {
+        padding: 20px;
     }
-    nav{
+
+    nav {
         flex-direction: column;
+    }
+    .banner-tl {
+        font-size: 3.5rem;
+        font-weight: 700;
     }
 }
