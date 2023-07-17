@@ -3,6 +3,9 @@
     font-family: 'Work Sans', sans-serif;
     margin: 0;
 }
+.text-desc {
+    color: #424242;
+}
 
 /* Header styles */
 /* Navbar design */
@@ -52,10 +55,6 @@ nav li a {
     color: #131313;
 }
 
-.banner-desc {
-
-    color: #424242;
-}
 
 .banner-btn {
     margin: 10px auto;
@@ -75,6 +74,66 @@ nav li a {
     width: 100%;
 }
 
+/* main styles */
+main{
+    max-width: 1440px;
+    margin: 70px auto;
+}
+.feature{
+    display: flex;
+    align-items: center;
+}
+.feature-img{
+   display: grid;
+   grid-template-columns: repeat(2,1fr);
+   gap:1.5rem;
+}
+/* .feature-img img{
+    height: 330px;
+    width: 330px;
+    border-radius: 10px;
+} */
+.feature-content{
+    padding-left:70px;
+    padding-right:70px;
+    
+}
+.feature-content h3{
+    color: #727272;
+    font-size: 2.8rem;
+    font-weight: 700;
+}
+
+.feature-content p{
+    color: #424242;
+    font-weight: 500;
+    /* margin: 10px 0; */
+}
+.feature-btn{
+    border-radius: 8px;
+    background-color: #FF900E;
+    border: none;
+    color: #FFF;
+    text-align: center;
+    font-size: 1.25rem;
+    font-weight: 600;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive design */
 @media screen and (max-width: 576px) {
     header {
         padding: 20px;
@@ -83,13 +142,46 @@ nav li a {
         flex-direction: column;
         /* margin:10px auto; */
     }
-    nav {
+    nav, .feature {
         flex-direction: column;
     }
-    .banner-tl {
+    
+    .feature-img{
+        grid-template-columns: 1fr;
+
+     }
+    .feature-content{
+        padding-left:20px;
+        padding-right:20px;
+    }
+    .feature-content p{
+        color: #424242;
+        font-size: 15px;
+        font-weight: 400;
+        margin: 10px 0;
+        width:300px;
+    }
+    /* .banner-tl {
         font-size: 3rem;
         font-weight: 700;
     }
+    .feature-img{
+       grid-template-columns: 1fr;
+       margin: 0 auto;
+    }
+    
+    .feature-content{
+        width: 400px;
+        margin:0 auto;
+        padding:15px;
+
+    }
+    
+    .feature-content h3{
+        color: #727272;
+        font-size: 1.7rem;
+    } */
+
 }
 
 @media screen and (min-width: 576px) and (max-width: 992px) {
@@ -97,11 +189,15 @@ nav li a {
         padding: 20px;
     }
 
-    nav {
+    nav , .feature {
         flex-direction: column;
     }
     .banner-tl {
         font-size: 3.5rem;
         font-weight: 700;
     }
+    .feature-img{
+        grid-template-columns: 1fr;
+
+     }
 }
